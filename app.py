@@ -7,9 +7,9 @@ app = Flask(__name__)
 def hello_world():  # put application's code here
     return render_template('index.html')
 
-@app.route('/videosshow')
-def videosshow():  # put application's code here
-    return render_template('videosshow.html')
+@app.route('/<vid_id>/videosshow')
+def videosshow(vid_id):  # put application's code here
+    return render_template('videosshow.html', vid_id=vid_id)
 
 
 if __name__ == '__main__':

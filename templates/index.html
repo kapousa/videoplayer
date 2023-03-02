@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Pure CSS Simple Drop-Down CheckBox List</title>
-     <style>
-      body {
-    font-family:sans-serif;
-    font-size:5vmin;
-    color:dimgray;
-}
-h1, h2 {
-    text-align:center;
-}
-.chkdropdown {
-    display:inline-block;
-    position:relative;
-    color:black;
-}
-.chkdropdown, .chkdropdown ul {
-    border:1px solid black;
-    background:whitesmoke;
-    padding:0.1ex 0.5ex 0;
-}
-.chkdropdown ul {
-    position:absolute;
-    width:100%;
-    list-style-type:none;
-    padding:0;
-    margin:0;
-    left:0;
-    height:0;
-    overflow:hidden;
-    border-color:transparent;
-    background-clip:padding-box;
-}
-.chkdropdown:hover ul {
-    height:auto;
-    border-color:black;
-}
-.chkdropdown li:nth-child(n+2) {
-    border-top:1px solid silver;
-}
-.chkdropdown input[type="checkbox"] {
-    float:left;
-}
-.chkdropdown label {
-    display:block;
-}
+<head>
+    <meta charset="UTF-8">
+    <title>My List</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
 
-     </style>
-	</head>
-	<body>
-		<a href="/videosshow">View video</a>
-	</body>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro h1 {
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #555555;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list li {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .list li:hover {
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+
+        .list li h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .list li p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="intro">
+        <h1>Welcome to BrontoMind Crash Course</h1>
+        <p>Check out these awesome lessons:</p>
+    </div>
+    <ul class="list">
+        <li>
+            <h3><a href="/UFTe7uzcMRs/videosshow" target="_blank">1- Create BrontoMind Account</a></h3>
+            <p>Inn this video, you will learn how to create account in BrontoMind platform.</p>
+        </li>
+        <li>
+            <h3><a href="/t9-tn_Xgw8U/videosshow" target="_blank">2- BrontoMind's screens overview</a></h3>
+            <p>In this video, take overview on BrontoMind screens.</p>
+        </li>
+        <li>
+            <h3><a href="/Rq8p2hX2Dls/videosshow" target="_blank">3- What is the model goal?</a></h3>
+            <p>In this video we explain what is the meaning of model goal in BrontoMind platform.</p>
+        </li>
+        <li>
+            <h3><a href="/fxFEzqr3e6M/videosshow" target="_blank">4- What are the supported data sources?</a></h3>
+            <p>In this course we explain what kind of data sources is supported by BrontoMind to create the machine
+                learning model.</p>
+        </li>
+    </ul>
+</div>
+</body>
 </html>
+
