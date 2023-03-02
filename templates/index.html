@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pure CSS Simple Drop-Down CheckBox List</title>
+     <style>
+      body {
+    font-family:sans-serif;
+    font-size:5vmin;
+    color:dimgray;
+}
+h1, h2 {
+    text-align:center;
+}
+.chkdropdown {
+    display:inline-block;
+    position:relative;
+    color:black;
+}
+.chkdropdown, .chkdropdown ul {
+    border:1px solid black;
+    background:whitesmoke;
+    padding:0.1ex 0.5ex 0;
+}
+.chkdropdown ul {
+    position:absolute;
+    width:100%;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    left:0;
+    height:0;
+    overflow:hidden;
+    border-color:transparent;
+    background-clip:padding-box;
+}
+.chkdropdown:hover ul {
+    height:auto;
+    border-color:black;
+}
+.chkdropdown li:nth-child(n+2) {
+    border-top:1px solid silver;
+}
+.chkdropdown input[type="checkbox"] {
+    float:left;
+}
+.chkdropdown label {
+    display:block;
+}
+
+     </style>
+	</head>
+	<body>
+		<a href="/videosshow">View video</a>
+	</body>
+</html>
